@@ -16,23 +16,14 @@ namespace unit_13._6._2
         {
             string path = @"D:\CSharp\unit13.6.1\Text1.txt";
 
-            string[] readText = ReadText(path);
-
-            TenWords(readText);
+            TenWords(path);
         }
 
-        static string[] ReadText(string path)
+        static void TenWords(string path)
         {
-
             string[] readText = File.ReadAllLines(path);
 
             string[] newReadText = new string[] { };
-
-            return newReadText;
-        }
-
-        static void TenWords(string[] readText)
-        {
 
             for (int i = 0; i < readText.Length; i++)
             {
